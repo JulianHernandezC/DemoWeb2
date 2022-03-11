@@ -41,5 +41,10 @@ public class EmpleadoServiceImpl implements EmpleadoService {
 	public List<Empleado> listarFiltroNombreEs(String cad) {
 		return empleadoRepo.listarCuyoNombreEs(cad);
 	}
+
+	@Override
+	public Empleado inserta(Empleado emp) {
+		return empleadoRepo.save(emp);
+	}
 	
 }
