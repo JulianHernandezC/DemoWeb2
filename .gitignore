@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+### BBDD H2 ###
+SpringBoot.lock.db
+SpringBoot.mv.db
