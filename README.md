@@ -6,4 +6,4 @@ Ejecuta `git clone https://github.com/JulianHernandezC/DemoWeb2.git` en el direc
 
 ## Abrirlo con STS/Eclipse o similar:
 
-Desde el IDE de desarrollo 'Importar' -> 'Existing Maven Projects'.
+Desde el IDE de desarrollo: `File >> Import >> 'Existing Maven Projects'`.

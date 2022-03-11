@@ -1,0 +1,13 @@
+2022-03-11 08:57:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO EMPLEADO (ID, NOMBRE, APELLIDOS) VALUE[*] (1, 'Rocío', 'De la O')"; se esperaba "DIRECT, SORTED, DEFAULT, VALUES, SET, (, WITH, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO EMPLEADO (ID, NOMBRE, APELLIDOS) VALUE[*] (1, 'Rocío', 'De la O')"; expected "DIRECT, SORTED, DEFAULT, VALUES, SET, (, WITH, SELECT, TABLE, VALUES"; SQL statement:
+insert into empleado (id, nombre, apellidos) value (1, 'Rocío', 'De la O') [42001-200]
+2022-03-11 08:58:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO EMPLEADO (ID, NOMBRE, APELLIDOS) VALUE[*] (1, 'Rocío', 'De la O')"; se esperaba "DIRECT, SORTED, DEFAULT, VALUES, SET, (, WITH, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "INSERT INTO EMPLEADO (ID, NOMBRE, APELLIDOS) VALUE[*] (1, 'Rocío', 'De la O')"; expected "DIRECT, SORTED, DEFAULT, VALUES, SET, (, WITH, SELECT, TABLE, VALUES"; SQL statement:
+insert into empleado (id, nombre, apellidos) value (1, 'Rocío', 'De la O') [42001-200]
+2022-03-11 09:04:23 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "EMPELADO" no encontrada
+Table "EMPELADO" not found; SQL statement:
+INSERT INTO EMPELADO (ID, NOMBRE, APELLIDOS)
+SELECT 2, 'ANA', 'MARTÍNEZ' FROM DUAL [42102-200]
