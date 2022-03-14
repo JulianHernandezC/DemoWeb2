@@ -5,11 +5,16 @@
 	<title>Mi aplicación web</title>
 </head>
 <body>
+	<!--  <h3>[[${usuario.mensaje}]]'</h3> -->
+	<h5 th:inline="text">Hola '[[${usuario.nombreYapellidos}]]'  ([[${usuario.username}]]), 
+	tu rol es [[${usuario.rol.rol}]]. </h5>
+	
+	
 	<b>INICIO:</b> Aplicación web <b>APP</b>.
 	<ul> MENÚ:
 		<li> <a href="/app/saludo">Saluda</a> </li>
 		<li> <a href="/app/saludo?name=Julian">Salúdame</a> </li>
-		<li> <a href="/app/listarEmpleados">Lista Empleados</a></li>
+		<li th:if="${usuario.rol.rol == 'ADMIN'}"> <a href="/app/listarEmpleados">Lista Empleados</a></li>
 		<li> <a href="/app/h2-console" target="_new">h2-console</a></li>
 	</ul>
 </body>
