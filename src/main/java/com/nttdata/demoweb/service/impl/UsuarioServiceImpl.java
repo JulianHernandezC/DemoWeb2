@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.nttdata.demoweb.repository.UsuarioRepoJPA;
+import com.nttdata.demoweb.repository.entity.Rol;
 import com.nttdata.demoweb.repository.entity.Usuario;
 import com.nttdata.demoweb.service.UsuarioService;
 
@@ -27,6 +28,7 @@ public class UsuarioServiceImpl implements UsuarioService, UserDetailsService {
 	public Usuario buscarPorUsername(String username) {
 		return usuarioDAO.findById(username).get();
 	}
+	
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

@@ -17,7 +17,7 @@ public class Rol implements GrantedAuthority {
 	
 	@Column
 	private String rol;
-
+	
 	public Integer getId() {
 		return id;
 	}
