@@ -1,5 +1,7 @@
 package com.nttdata.demoweb.repository.entity;
 
+import java.util.Objects;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,6 +22,33 @@ public class Empleado {
 	
 	@Column
 	private String apellidos;
+	
+	
+	
+	
+	
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (!(obj instanceof Empleado)) {
+			return false;
+		}
+		Empleado other = (Empleado) obj;
+		return Objects.equals(id, other.id);
+	}
+	
+	
+	
+	
+	
 
 	public Integer getId() {
 		return id;
