@@ -45,6 +45,7 @@ class EmpleadoServiceImplTest {
 
 	@AfterEach
 	void tearDown() throws Exception {
+		repo.deleteAll();
 	}
 
 	@Test
@@ -117,7 +118,7 @@ class EmpleadoServiceImplTest {
 
 	
 	@Test
-	void testInserta() {
+	void testInserta() throws Exception {
 		//GIVEN:
 			//Hay dos usuarios en bbdd ('Manuel' y 'Ana')
 			assertEquals(2, service.listar().size(), "Hay dos empleados en BBDD");

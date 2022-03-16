@@ -43,7 +43,7 @@ public class EmpleadoServiceImpl implements EmpleadoService {
 	}
 
 	@Override
-	public Empleado inserta(Empleado emp) {
+	public Empleado inserta(Empleado emp) throws Exception {
 		return empleadoRepo.save(emp);
 	}
 
